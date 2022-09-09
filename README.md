@@ -2,7 +2,7 @@
 
 ## About
 
-This extension provides...
+This extension 
 
 ## Download
 
