@@ -1,4 +1,4 @@
-# Extension Combodo PowerBI Reporting Template
+# Extension PowerBI reporting template - Helpdesk view
 
 ## About
 
