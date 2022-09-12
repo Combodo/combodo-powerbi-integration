@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Set>
   <QueryOQL alias="QueryOQL" id="1">
-    <name>PowerBI - Integration - List team name - Combodo</name>
-    <description>Export the list of teams défined in iTOP.
-      This teams will be display on report PowerBI provide with the extension PowerBI report template.</description>
+    <name>PowerBI - Integration - List teams' name - Combodo</name>
+    <description>Export the list of teams defined in iTop.
+      These teams will be displayed on PowerBI reports provided with the extension PowerBI report template.</description>
     <is_template>no</is_template>
     <oql><![CDATA[SELECT Team]]></oql>
     <fields>id,name</fields>
     <finalclass>QueryOQL</finalclass>
   </QueryOQL>
     <QueryOQL alias="QueryOQL" id="2">
-    <name>PowerBI - Integration - The first team affected on Tickets updated over the last 12 months - Combodo</name>
-    <description>Export the id of UserRequest object and the id of the first team affected on this UserRequest.
-      The tickets are filter on UserRequest class and tickets updated over the 12 months in function the lastupdatedate.</description>
+    <name>PowerBI - Integration - List the first teams affected on Tickets updated over the last 12 months - Combodo</name>
+    <description>Export the id of UserRequest object and the id of the first team dispatched on this UserRequest.
+      The tickets are filtered on User Requests that have been updated over the last 12 months prior their last update date.</description>
     <is_template>no</is_template>
     <oql><![CDATA[SELECT CMDBChangeOpSetAttributeScalar AS sa JOIN UserRequest AS u ON sa.objkey=u.id JOIN CMDBChange AS c ON sa.change = c.id WHERE sa.objclass ='UserRequest' AND sa.attcode = 'team_id' AND sa.oldvalue!=sa.newvalue AND sa.oldvalue='0' AND sa.objclass='UserRequest' AND
 u.last_update>= DATE_SUB(DATE_FORMAT(NOW(),'%Y-%m-01'), INTERVAL 12 MONTH) AND u.last_update<= DATE_FORMAT(NOW(),'%Y-%m-31')]]></oql>
@@ -20,9 +20,9 @@ u.last_update>= DATE_SUB(DATE_FORMAT(NOW(),'%Y-%m-01'), INTERVAL 12 MONTH) AND u
     <finalclass>QueryOQL</finalclass>
   </QueryOQL>
     <QueryOQL alias="QueryOQL" id="3">
-    <name>PowerBI extension - UserRequest updated over the last 12 months - Combodo</name>
-    <description>Export the list the attributes on tickets used by the extension PowerBI report template.
-      The tickets are filter on UserRequest class and tickets updated over the 12 months in function the lastupdatedate.</description>
+    <name>PowerBI - Integration - User Requests updated over the last 12 months - Combodo</name>
+    <description>Export UserRequest's attributes from tickets used by the extension PowerBI report template.
+      The tickets are filter on User Requests that have been updated over the last 12 months prior their last update date.</description>
     <is_template>no</is_template>
     <oql><![CDATA[SELECT UserRequest WHERE last_update>= DATE_SUB(DATE_FORMAT(NOW(),'%Y-%m-01'), INTERVAL 12 MONTH) AND last_update<= DATE_FORMAT(NOW(),'%Y-%m-31')]]></oql>
     <fields>id,operational_status, status, ref, org_id, org_name, caller_id, caller_name, team_id, team_id_friendlyname, agent_id, agent_name, impact,urgency,priority, origin, request_type, start_date, end_date, last_update, assignment_date, resolution_date, last_pending_date, sla_tto_passed,sla_ttr_passed,time_spent,resolution_code, tto_escalation_deadline, ttr_escalation_deadline, service_name</fields>
