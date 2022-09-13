@@ -3,7 +3,7 @@
   <extension_code>combodo-powerbi-integration</extension_code>
   <version>1.0.0</version>
   <label><![CDATA[PowerBI reporting template - Helpdesk view ]]></label>
-  <description><![CDATA[Put here a longer description of your extension]]></description>
+  <description><![CDATA[Select this option to use PowerBI reporting template with query phrasebook.]]></description>
   <mandatory>false</mandatory>
   <more_info_url></more_info_url>
 </extension>
