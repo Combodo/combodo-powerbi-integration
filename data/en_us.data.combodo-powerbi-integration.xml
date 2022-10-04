@@ -19,7 +19,7 @@
     <finalclass>QueryOQL</finalclass>
   </QueryOQL>
   <QueryOQL alias="QueryOQL" id="3">
-    <name>PowerBI - Integration - List the first teams affected on Tickets updated over the last 12 months - Combodo</name>
+    <name>PowerBI - Integration - List the first teams dispatched on Tickets updated over the last 12 months - Combodo</name>
     <description>Export the id of UserRequest object and the id of the first team dispatched on this UserRequest.
       The tickets are filtered on User Requests that have been updated over the last 12 months prior their last update date.</description>
     <is_template>no</is_template>
