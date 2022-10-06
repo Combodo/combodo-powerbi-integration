@@ -2,10 +2,10 @@
 
 ## About
 
-This extension provides new queries phrasebooks on iTOP.
+This extension provides new queries phrasebook on iTOP.
 
-The report template on Microsoft Power BI Desktop use these iTop queries phrasebooks to display the helpdesk activity of your service.
-The report template is providing into [combodo-power-template](https://github.com/Combodo/combodo-powerbi-template).
+The report template on Microsoft Power BI Desktop uses these iTop queries to display the helpdesk activity of your service.
+The report template is provided into [combodo-power-template](https://github.com/Combodo/combodo-powerbi-template).
 
 For more information about this module have a look at the [Documentation](https://www.itophub.io/wiki/page?id=extensions:combodo-powerbi-integration).
 
