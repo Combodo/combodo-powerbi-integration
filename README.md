@@ -1,4 +1,4 @@
-# Extension PowerBI integration - Helpdesk view
+# PowerBI integration - Helpdesk view
 
 ## About
 
