@@ -1,4 +1,4 @@
-# Extension PowerBI reporting template - Helpdesk view
+# Extension PowerBI integration - Helpdesk view
 
 ## About
 
