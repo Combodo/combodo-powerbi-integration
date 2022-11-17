@@ -1,4 +1,4 @@
-# PowerBI integration - Helpdesk view
+# Reporting for PowerBI - Helpdesk view
 
 ## About
 
